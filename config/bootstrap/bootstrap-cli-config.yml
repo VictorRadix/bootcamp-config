@@ -60,10 +60,10 @@ bootstrap:
           mappings:
               - cdf-group: cdf:root
                 idp-source-id: 507b5b3d-7498-4eef-96bd-bda9187cbf93
-                idp-source-name: bootcamp-30-test-admi
+                idp-source-name: bootcamp-30-test-admin
               - cdf-group: cdf:all:owner
                 idp-source-id: bbfb0150-5b33-47ff-a5cb-8dcebc41ba0c
-                idp-source-name: bootcamp-30-test-all-owne
+                idp-source-name: bootcamp-30-test-all-owner
               - cdf-group: cdf:all:read
                 idp-source-id: 5bb87f8e-98b8-490f-a99c-1f3dbd8ccde9
                 idp-source-name: bootcamp-30-test-all-read
@@ -94,23 +94,6 @@ bootstrap:
                 idp-source-name: bootcamp-30-prod-uc-001-oee-read
 
     namespaces:
-    - ns-name: src
-      description: Sources used for data extraction
-      ns-nodes:
-        - node-name: src:001:sap
-          description: Source 01 data from SAP
-        - node-name: src:002:opcua
-          description: Source 02 data from opcua
-    - ns-name: uc
-      description: Use cases representing the data/products
-
-      ns-nodes:
-        - node-name: uc:001:oee
-          description: Use case 001 Over all Equipment effectiveness
-          shared-access:
-            read:
-              - node-name: src:001:sap
-              - node-name: src:002:opcua
     - ns-name: src
       description: Sources used for data extraction
       ns-nodes:
