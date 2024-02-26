@@ -1,6 +1,6 @@
 ---
 name: deploy-bootstrap-cli
-# test
+
 on:
     push:
         branches:
