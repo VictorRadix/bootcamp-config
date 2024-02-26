@@ -17,11 +17,11 @@ jobs:
             matrix:
                 environment: [test, prod]
                 include:
-                      - environment: test
+                    - environment: test
 			CDF_CLUSTER: westeurope-1
 			CDF_PROJECT: cdf-bootcamp-30-test
 			IDP_TENANT: 16e3985b-ebe8-4e24-9da4-933e21a9fc81
-		      - environment: prod
+	            - environment: prod
 			CDF_CLUSTER: westeurope-1
 			CDF_PROJECT: cdf-bootcamp-30-prod
 			IDP_TENANT: 16e3985b-ebe8-4e24-9da4-933e21a9fc81
